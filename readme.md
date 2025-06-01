@@ -255,3 +255,6 @@ E2B_API_KEY=your_e2b_key
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Doriandarko/claude-engineer&type=Date)](https://star-history.com/#Doriandarko/claude-engineer&Date)
+
+## Project Documents
+See [PRD.md](PRD.md) for planned milestones and [Diagram.md](Diagram.md) for an overview of the architecture.
