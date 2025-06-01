@@ -10,6 +10,19 @@
 - Provide rich debugging output and progress indicators
 - Remain easy to extend and deploy
 
+## Architecture
+
+The project consists of several layers:
+
+1. **Interfaces** – a command line client and a web UI for chatting with the assistant.
+2. **Core Assistant** – controls conversation flow and communicates with external services.
+3. **Tool Loader** – discovers built-in and generated tools at runtime.
+4. **Token Manager** – tracks token usage and enforces limits.
+5. **History Store** – stores recent messages for context during a session.
+6. **External Services** – calls the Anthropic API for responses and the E2B sandbox to run generated code safely.
+
+See `Diagram.md` for a high level view of these components.
+
 ## Milestones
 ### Short‑Term (within 1 week)
 1. **Documentation completeness** – add architecture diagram and PRD (this document)

@@ -9,20 +9,24 @@ flowchart TD
     subgraph Core
         C[Assistant]
         D[Tool Loader]
+        E[Token Manager]
+        F[History Store]
     end
     subgraph Tools
-        E[Built-in Tools]
-        F[Generated Tools]
+        G[Built-in Tools]
+        H[Generated Tools]
     end
     subgraph External
-        G[Anthropic API]
-        H[E2B Sandbox]
+        I[Anthropic API]
+        J[E2B Sandbox]
     end
     A --> C
     B --> C
     C --> D
-    D --> E
-    D --> F
-    C --> G
-    F --> H
+    C --> E
+    C --> F
+    D --> G
+    D --> H
+    C --> I
+    H --> J
 ```
